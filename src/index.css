@@ -1,0 +1,55 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --backgroundColor: #480026;
+  --activeColor:#ff048a;
+  --secondColor: #7b1f5090;
+  --whiteColor:#fff;
+  --disabledColor : #16256690;
+  --bgcolorpage : #780342d6;
+  --bgProducthover : #c95f9866;
+}
+
+body {
+  align-items: center;
+  background: var(--whiteColor);
+  color: var(--backgroundColor);
+  overflow: auto;
+  transition: background-color 1.5s ease, color 1.5s ease;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+}
+
+.slideshow-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
